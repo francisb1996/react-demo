@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import './Nav.css';
 
 export class Nav extends Component {
@@ -6,7 +7,7 @@ export class Nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            pages: ['Spots', 'Calculator', 'Profile']
+            pages: ['Map', 'Calculator', 'Profile']
         }
     }
 
@@ -15,7 +16,7 @@ export class Nav extends Component {
             <div className="nav">
                 <div className="title">BRAD FRANCIS | REACTJS DEMO</div>
                 <div className="spacer" />
-                {this.state.pages.map(page => <button key={page} className="nav-btn">{page}</button>)}
+                {this.state.pages.map(page => <Link to={"/" + page.toLowerCase()} style={{ textDecoration: 'none' }}><button key={page} className="nav-btn">{page}</button></Link>)}
             </div>
         )
     }

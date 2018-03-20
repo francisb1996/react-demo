@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Map} from './map/Map.js';
 import {Nav} from './nav/Nav.js';
+import {Router} from './router/Router';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <Nav />
         <div className="router-container">
-          <Map name="Demo" />
+          <Router />
         </div>
       </div>
     );
