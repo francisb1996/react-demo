@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Spot} from '../spot/Spot';
 import './Map.css';
 
+// TODO add small window when hovering over spot
 export class Map extends Component {
 
     constructor(props) {

@@ -9,12 +9,12 @@ export class Nav extends Component {
         this.state = {
             pages: ['Map', 'Calculator', 'Profile']
         }
-    }
+    }   
 
     render() {
         return(
             <div className="nav">
-                <div className="title">BRAD FRANCIS | REACTJS DEMO</div>
+                <Link to="/"><button id="home-btn" className="nav-btn">BRAD FRANCIS | REACTJS DEMO</button></Link>
                 <div className="spacer" />
                 {this.state.pages.map(page => <Link to={"/" + page.toLowerCase()} style={{ textDecoration: 'none' }}><button key={page} className="nav-btn">{page}</button></Link>)}
             </div>
