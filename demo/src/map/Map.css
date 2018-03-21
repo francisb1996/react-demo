@@ -1,0 +1,11 @@
+.map {
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 550px;
+    border-radius: 15px;
+    background: lightgray;
+    cursor: crosshair;
+    animation: cursor 500ms;
+}
