@@ -4,6 +4,7 @@ import {Home} from '../home/Home';
 import {Map} from '../map/Map';
 import {Profile} from '../profile/Profile';
 import { Calculator } from '../calculator/Calculator';
+import {Graph} from '../graph/Graph';
 
 
 // The Main component renders one of the three provided
@@ -18,6 +19,7 @@ export const Router = () => (
             <Route path='/map' component={Map}/>
             <Route path='/calculator' component={Calculator}/>
             <Route path='/profile' component={Profile}/>
+            <Route path='/graph' component={Graph}/>
         </Switch>
     </main> 
 );
