@@ -18,14 +18,14 @@ export class Nav extends Component {
                 <div className="nav">
                     <Link to="/"><button id="home-btn" className="nav-btn">BRAD FRANCIS | REACTJS DEMO</button></Link>
                     <div className="spacer" />
-                    {this.state.pages.map(page => <Link to={"/" + page.toLowerCase()} style={{ textDecoration: 'none' }}><button key={page} className="nav-btn">{page}</button></Link>)}
+                    {this.state.pages.map(page => <Link to={"/" + page.toLowerCase()} style={{ textDecoration: 'none' }} key={page}><button className="nav-btn">{page}</button></Link>)}
                 </div>
                 <div className="nav-mobile">
                     <Link to="/"><button id="home-btn" className="nav-btn">BRAD FRANCIS | REACTJS DEMO<div className="spacer" /></button></Link>
                     <button id="menu-btn" className="nav-btn" onClick={() => this.setState({showSideNav: !this.state.showSideNav})}>| | |</button>
                 </div>
                 <div className={this.state.showSideNav ? 'sidenav show': 'sidenav hidden'}>
-                    {this.state.pages.map(page => <Link to={"/" + page.toLowerCase()} style={{ textDecoration: 'none' }}><button key={page} className="nav-btn" onClick={() => this.setState({showSideNav: false})}>{page}</button></Link>)}
+                    {this.state.pages.map(page => <Link to={"/" + page.toLowerCase()} style={{ textDecoration: 'none' }} key={page}><button className="nav-btn" onClick={() => this.setState({showSideNav: false})}>{page}</button></Link>)}
                 </div>
             </div>
         );

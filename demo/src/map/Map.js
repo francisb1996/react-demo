@@ -16,8 +16,11 @@ export class Map extends Component {
 
     render() {
         return(
-            <div className="map" onClick={(e) => this.addSpot(e)}>
-                {this.state.children.map(spot => <Spot key={spot.value} value={spot.value} styles={spot.styles} />)}      
+            <div className="map-container">
+                <h2>MAP</h2>
+                <div className="map" onClick={(e) => this.addSpot(e)}>
+                    {this.state.children.map(spot => <Spot key={spot.value} value={spot.value} styles={spot.styles} />)}      
+                </div>
             </div>
         );
     }

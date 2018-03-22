@@ -29,7 +29,6 @@
 .nav-btn {
     outline: none;
     height: 100%;
-    padding: 10px;
     background-color: #444;
     color: white;
     transition: all 0.2s;
@@ -75,5 +74,5 @@
 
 .hidden {
     position: absolute;
-    transform: translateY(-300px);
+    transform: translateY(-250px);
 }
